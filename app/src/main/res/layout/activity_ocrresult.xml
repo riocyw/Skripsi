@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rog.mcpix.OCRResult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/ocrText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType=""
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/menufloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:tint="@color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:rippleColor="@color/white"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:useCompatPadding="true"
+            tools:ignore="RtlHardcoded" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/pdfBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/menufloat"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:clickable="true"
+            android:src="@mipmap/pdf"
+            android:visibility="gone"
+            app:backgroundTint="@android:color/holo_orange_light"
+            app:fabSize="mini"
+            app:rippleColor="@color/white"
+            tools:ignore="RtlHardcoded" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/copyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/pdfBtn"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:clickable="true"
+            android:src="@mipmap/copy"
+            android:visibility="gone"
+            app:backgroundTint="@android:color/holo_orange_light"
+            app:fabSize="mini"
+            app:rippleColor="@color/white"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PhotoPreview">
+    <item
+        android:id="@+id/navigation_takephoto"
+        android:icon="@mipmap/add_photo"
+        android:title="Take Photo"/>
+    <item
+        android:id="@+id/navigation_ocr"
+        android:icon="@mipmap/ocr"
+        android:title="@string/title_ocr"/>
+</menu>

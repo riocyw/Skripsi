@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nama Matkul"
+        android:layout_margin="1dp"
+        android:layout_column="0"
+        android:background="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SKS"
+        android:layout_margin="1dp"
+        android:layout_column="1"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grade"
+        android:layout_margin="1dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_column="2"
+        />
+</TableRow>

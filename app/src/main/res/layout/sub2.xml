@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <ru.rambler.libs.swipe_layout.SwipeLayout
+            android:id="@+id/sw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--CENTER. app:gravity="center" - is default value -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="06/04/18"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="KB"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nilai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="89.50"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <!--RIGHT-->
+            <LinearLayout
+                android:id="@+id/right"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#ff0000"
+                app:bring_to_clamp="80dp"
+                app:clamp="self"
+                app:gravity="right"
+                app:sticky="80dp">
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:text="DELETE"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--LEFT-->
+            <LinearLayout
+                android:id="@+id/left"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#ffc54d"
+                app:bring_to_clamp="80dp"
+                app:clamp="self"
+                app:gravity="left"
+                app:sticky="80dp">
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:text="EDIT"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ru.rambler.libs.swipe_layout.SwipeLayout>
+    </LinearLayout>
+</RelativeLayout>

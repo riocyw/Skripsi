@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgmain"
+    android:id="@id/layoutRoot"
+    tools:context="com.example.rog.mcpix.Gallery">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/hsv"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/breadcrumb"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"></LinearLayout>
+    </HorizontalScrollView>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_below="@id/hsv"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/maingv"></GridView>
+    <ListView
+        android:layout_below="@id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:id="@+id/listFolder2"
+        ></ListView>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_below="@id/hsv"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:id="@+id/photogv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"></GridView>
+
+    <TextView
+        android:id="@+id/warning_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Tidak ada Berkas!"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:src="@android:drawable/ic_input_add"
+            android:visibility="gone"
+            app:backgroundTint="@android:color/holo_orange_light"
+            app:elevation="7dp"
+            app:fabSize="normal"
+            app:useCompatPadding="true" />
+
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/convert"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="PDF"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/pdfBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:src="?android:attr/actionModeFindDrawable"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/holo_orange_light"
+                app:elevation="0dp"
+                app:fabSize="mini"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/l2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="CAMERA"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/openBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:src="@android:drawable/ic_menu_camera"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/holo_orange_light"
+                app:elevation="0dp"
+                app:fabSize="mini"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

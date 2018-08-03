@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rog.mcpix.JadwalActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Senin"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/senin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warning_senin"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text="Tidak Ada Jadwal"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Selasa"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/selasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warning_selasa"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text="Tidak Ada Jadwal"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Rabu"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/rabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warning_rabu"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text="Tidak Ada Jadwal"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Kamis"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/kamis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warning_kamis"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text="Tidak Ada Jadwal"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Jumat"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/jumat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warning_jumat"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text="Tidak Ada Jadwal"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Sabtu"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/sabtu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warning_sabtu"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text="Tidak Ada Jadwal"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:elevation="7dp"
+        app:fabSize="normal"
+        app:useCompatPadding="true" />
+
+</RelativeLayout>

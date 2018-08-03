@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PIXATURE</string>
+    <string name="title_ocr">OCR</string>
+    <string name="pilih_semester">Pilih Semester</string>
+    <string name="tambah_folder">Tambah Folder</string>
+    <!--Rendering Problems window on TextInputEditText-->
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+</resources>

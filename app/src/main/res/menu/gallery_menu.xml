@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.tommy.animationbutton.MainActivity"
+    >
+    <group android:id="@+id/grupmenu">
+        <item android:id="@+id/copy"
+            android:title="Copy"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+        <item android:id="@+id/move"
+            android:title="Move"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+        <item android:id="@+id/delete"
+            android:title="Delete"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/grupmenu2">
+        <item android:id="@+id/rename"
+            android:title="Rename"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/grupmenu3">
+        <item android:id="@+id/newfolder"
+            android:title="New Folder"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+    </group>
+</menu>

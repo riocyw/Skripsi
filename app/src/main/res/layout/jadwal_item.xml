@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="15dp"
+    android:layout_margin="20dp"
+    card_view:cardBackgroundColor="#FFF"
+    card_view:cardElevation="10dp"
+    android:id="@+id/cv"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="260dp"
+        android:layout_height="155dp">
+
+        <TextView
+            android:id="@id/nama_matkul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Nama Mata Kuliah"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_matkul"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="00.00 - 00.00"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ruangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_matkul"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/waktu"
+            android:text="Curcuminoid"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/waktu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Dosen : "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ruangan"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/judul"
+            android:text="Hendry Setiawan"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnMore"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/more"
+            android:backgroundTint="@android:color/black"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

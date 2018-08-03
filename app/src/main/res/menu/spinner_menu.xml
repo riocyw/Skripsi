@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/spingroup">
+    <item
+        android:id="@+id/spinner"
+        android:title="@string/pilih_semester"
+        app:actionViewClass="android.widget.Spinner"
+        app:showAsAction="always" />
+    </group>
+</menu>

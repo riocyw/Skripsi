@@ -1,0 +1,8 @@
+PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS mata_kuliah (id_mata_kuliah INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,nama_mata_kuliah TEXT UNIQUE,dosen TEXT,semester INTEGER,sks INTEGER,nilai_akhir REAL,grade TEXT,status BLOB,update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE IF NOT EXISTS nilai (id_nilai INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,id_mata_kuliah INTEGER,tgl_input TEXT,jenis INTEGER,nilai REAL,update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY(id_mata_kuliah) REFERENCES mata_kuliah(id_mata_kuliah) ON DELETE CASCADE ON UPDATE CASCADE);
+CREATE TABLE IF NOT EXISTS jadwal (id_jadwal INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,id_mata_kuliah INTEGER,hari NUMERIC,mulai TEXT,selesai TEXT,update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,ruangan TEXT,FOREIGN KEY(id_mata_kuliah) REFERENCES mata_kuliah(id_mata_kuliah) ON DELETE CASCADE ON UPDATE CASCADE);
+CREATE TABLE IF NOT EXISTS bobot_nilai (id_bobot TEXT NOT NULL UNIQUE,jenis_bobot INTEGER,besar_bobot REAL,update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(id_bobot));
+INSERT INTO bobot_nilai(id_bobot,jenis_bobot,besar_bobot) SELECT * FROM (SELECT 'KK',1,10) AS TMP WHERE NOT EXISTS (SELECT 1 FROM bobot_nilai WHERE id_bobot = 'KK');
+INSERT INTO bobot_nilai(id_bobot,jenis_bobot,besar_bobot) SELECT * FROM (SELECT 'KB',2,25) AS TMP WHERE NOT EXISTS (SELECT 1 FROM bobot_nilai WHERE id_bobot = 'KB');
+INSERT INTO bobot_nilai(id_bobot,jenis_bobot,besar_bobot) SELECT * FROM (SELECT 'UAS',3,65) AS TMP WHERE NOT EXISTS (SELECT 1 FROM bobot_nilai WHERE id_bobot = 'UAS');

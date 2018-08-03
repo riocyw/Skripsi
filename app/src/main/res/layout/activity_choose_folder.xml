@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutRoot">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/hsv"
+        android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/breadcrumb"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"></LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/buat_folder_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Silahkan Membuat Folder!"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listFolder1"
+        android:layout_weight="10"
+        android:layout_below="@+id/hsv"/>
+
+</RelativeLayout>

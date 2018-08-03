@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<Button android:id="@+id/exp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#1774de"
+    android:drawableRight="@android:drawable/arrow_down_float"
+    android:paddingRight="10dp"
+    android:text="Expandable Layout Example"
+    android:textColor="#fff" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/exl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exp"
+        android:background="#b6cfec"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="true"
+        app:ael_interpolator="linearOutSlowIn"
+        app:ael_orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Nilai Akhir"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/nilai_akhir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:text="-"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Grade"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/grade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:text="-"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/add_nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/ic_input_add"
+                        android:scaleX="0.5"
+                        android:scaleY="0.8" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/k"
+            android:id="@+id/j"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+</RelativeLayout>

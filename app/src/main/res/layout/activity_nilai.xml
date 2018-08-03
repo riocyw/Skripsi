@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@id/layoutRoot">
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+</LinearLayout>
+    </ScrollView>
+<TextView
+android:id="@+id/warning_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+android:layout_centerVertical="true"
+android:text="Tidak ada Berkas!"
+android:visibility="invisible"
+android:textAlignment="center"
+    android:textColor="@color/common_google_signin_btn_text_light_default"
+android:textSize="18sp"
+android:textStyle="bold"/>
+</RelativeLayout>

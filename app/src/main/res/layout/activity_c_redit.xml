@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_doodle">
+
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="124dp"
+        android:src="@drawable/machung"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/createdBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Created By:"
+        android:textColor="#303F9F"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="85dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/creator" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/dosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rio Christian Yuwono"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="311410017"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ivan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ivan Christianto Onggara"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/aldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Reynaldo Alfa P K"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/tommy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Tommy Surya Jaya"
+                android:textSize="14dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="311410009"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="311410012"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="311410014"
+                android:textSize="14dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright - 2017 - Teknik Informatika, Universitas Ma Chung"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:textSize="12dp"/>
+
+
+</LinearLayout>
